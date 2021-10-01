@@ -18,10 +18,9 @@ handler.before = async (m) => {
                   host: 'https://translate.google.com',
               })
               conn.sendFile(m.chat, url, 'simi.opus', null, m, true)
-          })
+
       } catch(err) {
           console.log(err)
       }
 
-  }
 module.exports = handler
