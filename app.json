@@ -1,0 +1,36 @@
+{
+  "name": "MechaBots By Mecha-Labs",
+  "description": "Multifunctional WhatsApp Bot With Baileys.",
+  "keywords": [
+    "whatsapp-bot",
+    "bot-whatsapp",
+    "whatsapp-bot-nodejs"
+  ],
+  "website": "https://wa.me/6289671522780",
+  "repository": "https://github.com/Mecha-Labs/MechaBots",
+  "logo": "https://w.wallhaven.cc/full/wq/wallhaven-wqm8p7.jpg",
+  "success_url": "https://wa.me/6289671522780",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+    },
+    {
+      "url": "https://github.com/matteotiziano/heroku-buildpack-tesseract.git"
+    }
+  ]
+}
