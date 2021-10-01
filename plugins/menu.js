@@ -261,7 +261,7 @@ _*MechaBots Aktif Dari Pukul 06:00 s/d 00:00*_
     if (teks == "apk")
       tags = {
         apk: "𝗠𝗢𝗗𝗗𝗘𝗗 𝗔𝗣𝗞",
-        },
+        };
     if (teks == "fun")
       tags = {
         fun: "𝗙𝗨𝗡",
