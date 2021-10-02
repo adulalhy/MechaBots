@@ -11,7 +11,7 @@ handler.before = async (m) => {
     let say = m.text
     try{
         axios.get(`https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=id&cf=true`).then(res => {
-              let text = res.data.success
+              let text = res.data.messages[response]
               let url = googleTTS.getAudioUrl(`${text}`, {
                   lang: 'id',
                   slow: false,
