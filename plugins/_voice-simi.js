@@ -10,7 +10,7 @@ handler.before = async (m) => {
     if (!m.text) return
     let say = m.text
     try{
-        axios.get(`https://api.simsimi.net/v2/?text=&lc=id&cf=false`).then(res => {
+        axios.get(`https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=id&cf=true`).then(res => {
               let text = res.data.success
               let url = googleTTS.getAudioUrl(`${text}`, {
                   lang: 'id',
