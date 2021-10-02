@@ -19,8 +19,4 @@ handler.before = async (m) => {
               })
               conn.sendFile(m.chat, url, 'simi.opus', null, m, true)
 
-      } catch(err) {
-          console.log(err)
-      }
-
 module.exports = handler
