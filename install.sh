@@ -37,12 +37,10 @@ amd64|x86_64) ARCHITECTURE=amd64;;
     run_proot_cmd sudo dpkg --install chromium-browser_85.0.4183.83-0ubuntu2_${ARCHITECTURE}.deb
     run_proot_cmd curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
     run_proot_cmd apt-get install nodejs gcc g++ make -y
-    run_proot_cmd clear && echo "Clone MechaBots"
-    git clone https://github.com/Mecha-Labs/MechaBots.git
 }" >> $PREFIX/etc/proot-distro/mecha.sh
 proot-distro install mecha
 echo "proot-distro login mecha" >> $PREFIX/bin/mecha
 clear
-echo "English: Everything Has Been Installed You Just Enough npm install & run it"
-echo "Indonesia: Semuanya Sudah Terinstal Anda Cukup npm install & run"
+echo "English: Everything Has Been Installed You Just Enough  clone from github then npm install & run it"
+echo "Indonesia: Semuanya Sudah Terinstal Anda Cukup klon dari github lalu npm install & run"
 echo "Type : mecha For Login To Ubuntu"
