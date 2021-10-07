@@ -116,7 +116,7 @@ npm install --no-audit
 ```bash
 !sudo apt-get update -y
 !sudo apt-get full-upgrade -y
-!sudo apt-get install git wget curl build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev chromium-browser -y
+!sudo apt-get install git wget curl build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev chromium* y
 !sudo apt-get install ffmpeg* -y
 !sudo apt-get install imagemagick* -y
 !sudo apt-get install tesseract* -y 
