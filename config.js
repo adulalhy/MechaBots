@@ -47,6 +47,7 @@ global.APIKeys = {
   'https://api.zeks.xyz': 'apivinz',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
   'https://hardianto-chan.herokuapp.com': 'hardianto'
+  'https://api.lolhuman.xyz' : 'melXcaliph'
 }
 
 global.packname = 'MechaBots' // Untuk Nama Pada Sticker
