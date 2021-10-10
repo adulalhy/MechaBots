@@ -28,7 +28,6 @@
    "dependencies":{
       "@adiwajshing/baileys":"github:adiwajshing/baileys",
       "@hookform/resolvers": "^2.8.0",
-      "@vitalets/google-translate-api":"^7.0.0",
       "akaneko":"^5.1.2",
       "anime-quotes-api":"^1.2.0",
       "anime-wallpaper":"^1.0.1",
@@ -55,6 +54,7 @@
       "genius-lyrics":"^4.2.9",
       "genshin":"^1.2.4",
       "google-it": "^1.6.2",
+      "google-translate-api": "^2.3.0",
       "google-tts-api": "^2.0.2",
       "googleapis":"^76.0.0",
       "human-readable":"^0.2.1",
@@ -129,6 +129,7 @@
       "tiktok-downloader":"^0.0.4",
       "tiktok-scraper":"^1.4.24",
       "tinyurl":"^1.1.7",
+      "translate-google-api":"^1.0.4",
       "translation-google":"^0.2.1",
       "url-regex":"^5.0.0",
       "wa-sticker-formatter":"^3.6.0",
