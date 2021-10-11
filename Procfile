@@ -1,1 +1,1 @@
-worker: node . --db https://1452b3b296bd.ngrok.io/
+worker: node . --db https://json-server.repl.co --server
