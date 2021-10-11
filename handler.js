@@ -406,7 +406,7 @@ module.exports = {
                 .setMember(groupMetadata.participants.length) 
                 .toAttachment();
 
-              this.sendFile(jid, welcome, 'welcome.jpg', text, null, false, {
+              this.sendFile(jid, welcome.toBuffer(), 'welcome.jpg', text, null, false, {
                 contextInfo: {
                   mentionedJid: [user]
                 }
@@ -439,7 +439,7 @@ module.exports = {
                 .setBackground(bgimage)
                 .toAttachment()
 
-              this.sendFile(jid, leave, 'leave.jpg', text, null, false, {
+              this.sendFile(jid, leave.toBuffer(), 'leave.jpg', text, null, false, {
                 contextInfo: {
                   mentionedJid: [user]
                 }
@@ -466,7 +466,6 @@ module.exports = {
     if (chat.delete) return
     await this.sendButton(m.key.remoteJid, `
    @${m.participant.split`@`[0]} Telah Menghapus Pesan
-
 `.trim(), '', 'Matikan Antidelete', ',on delete', m.message, {
       contextInfo: {
         mentionedJid: [m.participant]
@@ -498,9 +497,7 @@ module.exports = {
     if (!desc) return
     let caption = `
     @${descOwner.split`@`[0]} Telah Mengubah Deskripsi Grup.
-
     ${desc}
-
         `.trim()
     this.sendButton(jid, caption, '', 'Matikan Deskripsi', ',off desc', { contextInfo: { mentionedJid: this.parseMention(caption) } })
 
