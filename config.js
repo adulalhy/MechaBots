@@ -46,7 +46,7 @@ global.APIKeys = {
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
-  'https://hardianto-chan.herokuapp.com': 'hardianto'
+  'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://api.lolhuman.xyz' : 'melXcaliph'
 }
 
